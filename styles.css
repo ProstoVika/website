@@ -281,32 +281,6 @@ article {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
 }
-
-.stars-container {
-    display: flex;
-    align-items: center;
-    width: 40%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#stars {
-    flex: 1;
-    background-image: url('images/8.jpg');
-    width: 150px;
-    position: relative;
-    min-height: 500px;
-    background-size: cover;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-}
-
-#stars:hover {
-    background: #000;
-}
 .text-container {
     padding: 30px;
 }
@@ -358,6 +332,32 @@ article {
 .github:hover {
     text-decoration: underline;
     color: #717070;
+}
+
+.stars-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stars {
+    flex: 1;
+    background-image: url('images/8.jpg');
+    width: 150px;
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+#stars:hover {
+    background: #000;
 }
 
 .container {
@@ -727,8 +727,7 @@ footer {
     }
 
     .box {
-        max-width: calc(100% - 187px);
-
+        max-width: calc(100% - 170px);
     }
 
     .img-project {
@@ -762,7 +761,7 @@ footer {
 
     }
     .row {
-        grid-gap: 64px;
+        grid-gap: 85px;
         padding: 39px;
     }
 
