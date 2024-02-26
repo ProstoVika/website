@@ -3,7 +3,6 @@ class MainController {
     line;
 
     constructor() {
-        this.setupDownloadCVButtonListener();
         this.aboutContainer = document.getElementById('contact-container');
         this.line = document.getElementById('line');
         if (!this.aboutContainer || !this.line) {
@@ -34,9 +33,7 @@ class MainController {
             behavior: 'smooth'
         });
     }
-    downloadCV = () => {
-        window.open('/CV.docx', '_blank');
-    }
+
     initListeners = () => {
         document.getElementById("contact-btn").addEventListener("click", this.toggleContactContainer.bind(this));
         document.querySelector(".close-contact").addEventListener("click", this.toggleContactContainer.bind(this));
@@ -46,12 +43,6 @@ class MainController {
         const scrollDownButton = document.getElementById("scroll-down-button");
         if (scrollDownButton) {
             scrollDownButton.addEventListener("click", this.scrollToBottom);
-        }
-    }
-    setupDownloadCVButtonListener = () => {
-        const downloadCVButton = document.getElementById("download-cv-btn");
-        if (downloadCVButton) {
-            downloadCVButton.addEventListener("click", this.downloadCV);
         }
     }
 }

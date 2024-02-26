@@ -150,7 +150,6 @@ article {
     flex: 4 4;
 }
 
-
 .navbar-background-image {
     width: 150px;
     height: 310px;
@@ -164,7 +163,6 @@ article {
     padding-top: 0;
     position: relative;
     background-image: url('images/13.jpg');
-
 }
 
 img {
@@ -390,8 +388,11 @@ img {
 }
 
 .down-button {
-    margin-left: 500px;
+    margin: 0 auto;
     padding: 10px;
+
+    text-align: center;
+    max-width: 200px;
 }
 
 #scroll-down-button {
@@ -399,7 +400,7 @@ img {
     background-color: #000;
     border: 1px solid #000;
     border-radius: 20px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding: 8px 15px;
     font-family: Lato, sans-serif;
     font-size: 15px;
@@ -410,6 +411,16 @@ img {
 #scroll-down-button:hover {
     color: black;
     background-color: #ffffff;
+}
+
+.some-text {
+    padding-top: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto;
 }
 
 .wrapper-projects {
@@ -602,7 +613,6 @@ footer {
     color: white;
     white-space: pre-wrap;
     font-size: 15px;
-    float: left;
     margin-top: 0;
 }
 
@@ -618,6 +628,11 @@ footer {
 
     .some-text {
         max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .down-button {
@@ -645,7 +660,7 @@ footer {
         justify-content: center;
         height: auto;
         min-height: auto;
-        padding: 18px;
+        padding: 5px;
         overflow: hidden;
     }
 
@@ -664,7 +679,13 @@ footer {
     }
 
     .title-navbar-text {
-        font-size: 4rem;
+        font-size: 1rem;
+        padding-left: 160px;
+        margin-bottom: 120px;
+    }
+
+    .navbar-background-image {
+        margin-left: 10px;
     }
 
     #line {
@@ -672,14 +693,9 @@ footer {
     }
 
     .container {
-        flex-direction: column;
         align-items: center;
     }
 
-    .down-button {
-        margin-left: 0;
-        margin-top: 20px;
-    }
 
     .some-text {
         max-width: 400px;
@@ -687,12 +703,15 @@ footer {
     }
 
     .down-button {
-        margin-left: 130px;
+        margin-left: 20px;
     }
 
     .box-footer {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .meet {
@@ -708,13 +727,8 @@ footer {
     }
 
     .copyright {
-        font-size: 12px;
-    }
-
-    footer {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        font-size: 10px;
+        text-align: center;
     }
 
 }
@@ -725,29 +739,36 @@ footer {
     }
 
     .down-button {
-        margin-left: 130px;
+        margin-left: 315px;
     }
+
 }
 
 @media only screen and (min-width: 992px) {
     .some-text {
-        max-width: 700px;
+        max-width: 730px;
+        margin: 0 auto;
     }
 
     .down-button {
-        margin-left: 130px;
+        margin-left: 225px;
+        padding: 10px;
+        max-width: 158px;
+
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
     .some-text {
         padding-top: 10px;
-        max-width: 800px;
+        max-width: 730px;
         margin: 0 auto;
     }
 
     .down-button {
-        margin-left: 500px;
+        margin-left: 552px;
         padding: 10px;
+        max-width: 198px;
     }
 }
