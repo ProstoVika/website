@@ -234,7 +234,7 @@ article {
     z-index: 1;
     overflow-y: scroll;
     width: 100%;
-    height: 650px;
+    height: 100vh;
     top: 100%;
     right: 0;
     transition-duration: 1.5s;
@@ -379,7 +379,6 @@ article {
 .down-button {
     margin: 0 auto;
     padding: 10px;
-
     text-align: center;
     max-width: 200px;
 }
@@ -680,7 +679,12 @@ footer {
     #line {
         top: 90px
     }
+    #contact-container {
+        height: 100%;
 
+        top: auto;
+        bottom: 0;
+    }
     .container {
         align-items: center;
     }
@@ -731,7 +735,7 @@ footer {
     }
 
     .img-project {
-        width: 90%;
+        width: 80%;
         height: auto;
     }
 
