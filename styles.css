@@ -428,7 +428,7 @@ article {
 
 .box {
     position: relative;
-    max-width: 453px;
+    max-width: 460px;
     display: grid;
     border: 1px solid #151414;
     grid-column: span 1;
@@ -723,15 +723,15 @@ footer {
 
     .row {
         grid-gap: 60px;
-        padding:60px;
+        padding:70px 0 60px 0;
     }
 
     .box {
-        max-width: calc(100% - 170px);
+        max-width: calc(100% - 150px);
     }
 
     .img-project {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
