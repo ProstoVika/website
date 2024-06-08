@@ -680,11 +680,27 @@ footer {
         top: 90px
     }
     #contact-container {
-        height: 100%;
 
-        top: auto;
-        bottom: 0;
+        width: 50%;
+        height: 50vh;
+        top: 50%;
+        right: 0;
+        transition-duration: 1.5s;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.75);
     }
+    #contact-container::-webkit-scrollbar {
+        width: 18px;
+    }
+
+    #contact-container::-webkit-scrollbar-thumb {
+        background: rgb(180, 175, 175);
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+    }
+
     .container {
         align-items: center;
     }
@@ -726,8 +742,7 @@ footer {
 
 
     .row {
-        grid-gap: 60px;
-        padding:70px 0 60px 0;
+        padding: 80px 0 90px 180px;
     }
 
     .box {
