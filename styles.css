@@ -680,26 +680,13 @@ footer {
         top: 90px
     }
     #contact-container {
-
-        width: 50%;
-        height: 50vh;
-        top: 50%;
-        right: 0;
-        transition-duration: 1.5s;
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(255, 255, 255, 0.75);
+     position:relative;
     }
     #contact-container::-webkit-scrollbar {
-        width: 18px;
+        width: 220px;
+        height: 220px;
     }
 
-    #contact-container::-webkit-scrollbar-thumb {
-        background: rgb(180, 175, 175);
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-    }
 
     .container {
         align-items: center;
