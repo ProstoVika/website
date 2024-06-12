@@ -66,11 +66,22 @@
     <div id="line"></div>
 </div>
 
+<!--canvas-->
+<canvas id="canvas"></canvas>
+<svg id="blot">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
+            <feColorMatrix
+                    type="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" />
+        </filter>
+    </defs>
+</svg>
+
 <!------ projects------------->
 <div class="wrapper-projects">
     <div class="row">
-
-
         <div class="box">
             <div class="block">TS, SCSS</div>
             <div class="image-wide">
