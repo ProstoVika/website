@@ -13,19 +13,13 @@ class MainController {
         window.addEventListener('scroll', this.progressBar.bind(this));
         this.initListeners();
         this.setupScrollDownButtonListener();
-
-
-
     }
 
     initCursor() {
-
         this.cursor = document.createElement("div");
         this.cursor.id = "cursor";
         this.cursor.className = "cursor";
         document.body.appendChild(this.cursor);
-
-
         document.addEventListener('mousemove', (e) => {
             this.cursor.style.top = `${e.clientY}px`;
             this.cursor.style.left = `${e.clientX}px`;
@@ -160,5 +154,4 @@ window.addEventListener("load", () => {
     if (window.location.pathname.includes('/pages/projects/')) {
         new CanvasAnimation();
     }
-
 });
