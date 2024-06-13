@@ -1,7 +1,6 @@
 class MainController {
 
     constructor() {
-
         this.aboutContainer = document.getElementById('contact-container');
         this.line = document.getElementById('line');
         if (!this.aboutContainer || !this.line) {

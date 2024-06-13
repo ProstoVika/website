@@ -436,6 +436,7 @@ article {
     font-size: 15px;
     font-weight: 300;
     display: inline-block;
+    text-align: center;
 }
 
 #scroll-down-button:hover {
@@ -539,10 +540,17 @@ article {
 }
 
 .github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    display: inline-block;
 }
-
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
 .project-link {
     display: flex;
     justify-content: center;
@@ -557,11 +565,43 @@ article {
     border: 1px solid #110d0d;
 }
 
+
 .project-link:hover {
     background-color: #110d0d;
     color: white;
 }
 
+.project-link-visit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #292b31;
+    font-size: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #110d0d;
+    position: relative;
+}
+
+.project-link-visit:hover {
+    background-color: #110d0d;
+    color: white;
+}
+
+.project-link-visit .hover-text {
+    display: none;
+}
+
+.project-link-visit:hover .original-text {
+    display: none;
+}
+
+.project-link-visit:hover .hover-text {
+    display: block;
+}
 footer {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
@@ -812,7 +852,10 @@ margin-right: 120px;
     .box {
         max-width: calc(100% - 150px);
     }
-
+    #scroll-down-button{
+        margin-bottom: 15px;
+        padding: 8px 10px;
+    }
     .close-contact{
         left: 80px;
 
@@ -823,10 +866,12 @@ margin-right: 120px;
     }
     .close-contact{
         left: 50px;
+    }
+    .stars-container {
+        width: 90%;
 
 
     }
-
 }
 
 @media screen and (min-width: 768px) {
