@@ -16,12 +16,13 @@
 </head>
 <body>
 
+
 <!-- header-->
 <div class="header">
     <nav class="navbar">
         <div class="header-icon">
-            <a class="header-icon-link" href="../../index.html">ABOUT ME</a>
-            <a class="header-icon-link" href="../projects/projects.html"> PROJECTS</a>
+            <a class="header-icon-link" id="btn-transition" href="../../index.html">ABOUT ME</a>
+            <a class="header-icon-link"> PROJECTS</a>
         </div>
 
         <div class="btn-header-logo">
@@ -29,6 +30,7 @@
                 <span class="logo"></span>
             </div>
         </div>
+
         <!------ contacts-------------->
         <div class="contact">
             <button type="button" id="contact-btn">CONTACT ME</button>
@@ -38,7 +40,8 @@
                     <canvas id="stars"></canvas>
                     <div class="text-container">
                         <div class="text-contact">Let’s build an amazing project together.</div>
-                        <p>I'll be waiting. Additionally, we can collaborate on various exciting projects together. What can I share with you?</p>
+                        <p>I'll be waiting. Additionally, we can collaborate on various exciting projects together. What
+                            can I share with you?</p>
                     </div>
                 </div>
 
@@ -66,290 +69,390 @@
     <div id="line"></div>
 </div>
 
-<!--canvas-->
-<canvas id="canvas"></canvas>
-<svg id="blot">
-    <defs>
-        <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
-            <feColorMatrix
-                    type="matrix"
-                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" />
-        </filter>
-    </defs>
-</svg>
+    <!--canvas-->
+    <canvas id="canvas"></canvas>
+    <svg id="blot">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="12"/>
+                <feColorMatrix
+                        type="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+            </filter>
+        </defs>
+    </svg>
 
-<!------ projects------------->
-<div class="wrapper-projects">
-    <div class="row">
-        <div class="box">
-            <div class="block">TS, SCSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/5.jpg">
-            </div>
+        <!------ projects------------->
+        <div class="wrapper-projects">
+            <div class="row">
+                <div class="box">
+                    <div class="block">TS, SCSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/5.jpg">
+                    </div>
 
-            <div class="text">
-                <div class="title-box">Online Store</div>
+                    <div class="text">
+                        <div class="title-box">Online Store</div>
 
-                <div class="text-details">
-                    I created an online store with a dynamic user interface.Users can explore products, search by
-                    name, and filter by category and price.
-                    Overall, it provides a seamless and engaging online shopping experience.
+                        <div class="text-details">
+                            I created an online store with a dynamic user interface.Users can explore products, search
+                            by
+                            name, and filter by category and price.
+                            Overall, it provides a seamless and engaging online shopping experience.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/online-store" target="_blank"
+                               rel="noopener noreferrer" class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                                <a href="https://prostovika.netlify.app" target="_blank" rel="noopener noreferrer"
+                                   class="github-link">
+                                    <button type="button" class="project-link-visit">
+                                        <span class="hover-text">+</span>
+                                        <span class="material-symbols-outlined">visit site</span>
+                                    </button>
+                                </a>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-container">
-                <a href="https://github.com/ProstoVika/online-store" target="_blank" rel="noopener noreferrer" class="github-link">
-                    <button type="button" class="project-link">
-                        <span class="material-icons">arrow_right_alt</span>
-                    </button>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </a>
+
+                <div class="box">
+                    <div class="block">Angular</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/9.jpg">
+                    </div>
+                    <div class="text">
+                        <div class="title-box">Online Store</div>
+                        <div class="text-details">
+                            I showcase an Angular project that is still in development.
+                            It is a website for commercial products, featuring a homepage, contact page, product basket,
+                            and checkout page.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/angular" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="block">JS, CSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/16.jpg">
+                    </div>
+
+                    <div class="text">
+                        <div class="title-box">Game</div>
+
+                        <div class="text-details">
+                            This is a small game written in pure JavaScript. It includes a JSON file from which
+                            questions and answers are retrieved. Each question has three options, one of which is
+                            correct.
+                            Additionally, there is a timer implemented.
+                            The game is designed for developers and is played within the console.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/game" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/game/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="block">TS, SCSS</div>
+                    <div class="project-image-wide">
+                        <img class="img-project" src="../../images/1.jpg">
+                    </div>
+                    <div class="text">
+                        <div class="title-box">Menu page</div>
+                        <div class="text-details">
+                            In this project, I crafted a restaurant menu page using HTML, SCSS, and TypeScript.The
+                            TypeScript code
+                            dynamically generates category buttons, handles clicks to filter items, and ensures a
+                            responsive
+                            user experience.
+                            Overall, the project provides a user-friendly interface to explore and navigate the
+                            restaurant
+                            menu.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/menu" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/menu/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="block">TS, SCSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/4.jpg">
+                    </div>
+
+                    <div class="text">
+                        <div class="title-box">Form</div>
+
+                        <div class="text-details">
+                            This code implements a form with various input fields and validation using a JavaScript
+                            class
+                            called Validator.
+                            The form includes fields for name, date of birth, email, password, and password
+                            confirmation.
+                            The Validator class has methods to validate each field based on specific regex patterns.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/form" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/form/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="block">TS, SCSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/7.jpg">
+                    </div>
+
+                    <div class="text">
+                        <div class="title-box">Lists</div>
+                        <div class="text-details">
+                            The assignment required the creation of a to-do list that closely resembles a specified
+                            design.
+                            Additionally, the task involved implementing data storage using cookieStorage to ensure the
+                            persistence of the to-do list data across user sessions.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/Lists" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/Lists/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="block">SCSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/6.jpg">
+                    </div>
+
+                    <div class="text">
+                        <div class="title-box">Web</div>
+
+                        <div class="text-details">
+                            The code aims to replicate a given design layout, featuring a responsive webpage showcasing
+                            bicycles.
+                            It includes a header, navigation, main content with product boxes, and a footer.
+                            Each product box contains an image, price, and details, following the design specified in
+                            the
+                            layout.
+                            The styling is done in SCSS.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/page-of-bicycles" target="_blank"
+                               rel="noopener noreferrer" class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/page-of-bicycles/" target="_blank"
+                               rel="noopener noreferrer" class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="block">TS, SCSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/2.jpg">
+                    </div>
+
+                    <div class="text">
+                        <div class="title-box">Weather widget</div>
+
+                        <div class="text-details">
+                            The task involved creating a weather widget with a search functionality. To retrieve weather
+                            data, the OpenWeatherMap API was utilized.
+                            The widget allows users to search for weather information in different locations, providing
+                            real-time weather updates based on the data fetched from the OpenWeatherMap API.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/Weather-widget" target="_blank"
+                               rel="noopener noreferrer" class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/Weather-widget/" target="_blank"
+                               rel="noopener noreferrer" class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="block">TS, SCSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/11.jpg">
+                    </div>
+
+
+                    <div class="text">
+                        <div class="title-box">Countries List Page with REST Countries</div>
+
+                        <div class="text-details">
+                            In this project, I: Created a list page displaying countries using REST countries API.
+                            Added search functionality to find countries by name.
+                            Implemented a filter to sort countries by region.
+                            Developed a theme switcher to toggle between light and dark modes.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/list-page" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/list-page/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="block">CSS</div>
+                    <div class="image-wide">
+                        <img class="img-project" src="../../images/3.jpg">
+                    </div>
+
+                    <div class="text">
+                        <div class="title-box">Carousel</div>
+
+                        <div class="text-details">
+                            This code creates a pure CSS image carousel with three slides. It features navigation
+                            buttons,
+                            dots, and transitions.
+                            Slides include images and text. The CSS styles handle layout, appearance, and interactivity.
+                            JavaScript is not used. Users can navigate using radio buttons, buttons, or dots for a
+                            seamless
+                            image transition.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/Carousel" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/Carousel/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="block">CSS</div>
+                    <video width="100%" height="auto" controls autoplay muted loop>
+                        <source src="../../images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="text">
+                        <div class="title-box">Responsive web page(flex)</div>
+                        <div class="text-details">
+                            I attempted to create two responsive web pages using different layout techniques: Flex
+                            layout.
+                            These exercises helped me enhance my skills in responsive design techniques using modern CSS
+                            layout methods.
+                        </div>
+                        <div class="btn-container">
+                            <a href="https://github.com/ProstoVika/Flex-Grid" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </button>
+                            </a>
+                            <a href="https://prostovika.github.io/Flex-Grid/" target="_blank" rel="noopener noreferrer"
+                               class="github-link">
+                                <button type="button" class="project-link-visit">
+                                    <span class="hover-text">+</span>
+                                    <span class="material-symbols-outlined">visit site</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="box">
-            <div class="block">TS, SCSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/9.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Angular project</div>
-
-                <div class="text-details">
-                    I showcase an Angular project that is still in development.
-                    It is a website for commercial products, featuring a homepage, contact page, product basket, and checkout page.
-                </div>
-                <a href="#" target="_blank"
-                   rel="noopener noreferrer" class="github-link">
-                    <button type="button" class="project-link">
-                        <span class="material-icons">arrow_right_alt</span>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <div class="block">JS, CSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/10.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Game</div>
-
-                <div class="text-details">
-                    This is a small game written in pure JavaScript. It includes a JSON file from which questions and answers are retrieved. Each question has three options, one of which is correct.
-                    Additionally, there is a timer implemented.
-                    The game is designed for developers and is played within the console.
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/ProstoVika/game" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link">
-                            <span class="material-icons">arrow_right_alt</span>
-                        </button>
-                    </a>
-                    <a href="https://prostovika.github.io/game/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="block">TS, SCSS</div>
-            <div class="project-image-wide">
-                <img class="img-project" src="../../images/1.jpg">
-            </div>
-            <div class="text">
-                <div class="title-box">MENU PAGE</div>
-                <div class="text-details">
-                    In this project, I crafted a restaurant menu page using HTML, SCSS, and TypeScript.The
-                    TypeScript code
-                    dynamically generates category buttons, handles clicks to filter items, and ensures a responsive
-                    user experience.
-                    Overall, the project provides a user-friendly interface to explore and navigate the restaurant
-                    menu.
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/ProstoVika/menu" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link">
-                            <span class="material-icons">arrow_right_alt</span>
-                        </button>
-                    </a>
-                    <a href="https://prostovika.github.io/menu/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="block">TS, SCSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/4.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Form</div>
-
-                <div class="text-details">
-                    This code implements a form with various input fields and validation using a JavaScript class
-                    called Validator.
-                    The form includes fields for name, date of birth, email, password, and password confirmation.
-                    The Validator class has methods to validate each field based on specific regex patterns.
-                </div>
-                <div class="btn-container">
-                <a href="https://github.com/ProstoVika/form" target="_blank" rel="noopener noreferrer" class="github-link">
-                    <button type="button" class="project-link">
-                        <span class="material-icons">arrow_right_alt</span>
-                    </button>
-                </a>
-                    <a href="https://prostovika.github.io/form/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="block">TS, SCSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/7.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Lists</div>
-                <div class="text-details">
-                    The assignment required the creation of a to-do list that closely resembles a specified design.
-                    Additionally, the task involved implementing data storage using cookieStorage to ensure the
-                    persistence of the to-do list data across user sessions.
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/ProstoVika/Lists" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link">
-                            <span class="material-icons">arrow_right_alt</span>
-                        </button>
-                    </a>
-                    <a href="https://prostovika.github.io/Lists/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="block">SCSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/6.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Web</div>
-
-                <div class="text-details">
-                    The code aims to replicate a given design layout, featuring a responsive webpage showcasing
-                    bicycles.
-                    It includes a header, navigation, main content with product boxes, and a footer.
-                    Each product box contains an image, price, and details, following the design specified in the
-                    layout.
-                    The styling is done in SCSS.
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/ProstoVika/page-of-bicycles" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link">
-                            <span class="material-icons">arrow_right_alt</span>
-                        </button>
-                    </a>
-                    <a href="https://prostovika.github.io/page-of-bicycles/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="block">TS, SCSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/2.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Weather widget</div>
-
-                <div class="text-details">
-                    The task involved creating a weather widget with a search functionality. To retrieve weather
-                    data, the OpenWeatherMap API was utilized.
-                    The widget allows users to search for weather information in different locations, providing
-                    real-time weather updates based on the data fetched from the OpenWeatherMap API.
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/ProstoVika/Weather-widget" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link">
-                            <span class="material-icons">arrow_right_alt</span>
-                        </button>
-                    </a>
-                    <a href="https://prostovika.github.io/Weather-widget/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="block">CSS</div>
-            <div class="image-wide">
-                <img class="img-project" src="../../images/3.jpg">
-            </div>
-
-            <div class="text">
-                <div class="title-box">Carousel</div>
-
-                <div class="text-details">
-                    This code creates a pure CSS image carousel with three slides. It features navigation buttons,
-                    dots, and transitions.
-                    Slides include images and text. The CSS styles handle layout, appearance, and interactivity.
-                    JavaScript is not used. Users can navigate using radio buttons, buttons, or dots for a seamless
-                    image transition.
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/ProstoVika/Carousel" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link">
-                            <span class="material-icons">arrow_right_alt</span>
-                        </button>
-                    </a>
-                    <a href="https://prostovika.github.io/Carousel/" target="_blank" rel="noopener noreferrer" class="github-link">
-                        <button type="button" class="project-link-visit">
-                            <span class="hover-text">+</span>
-                            <span class="material-symbols-outlined">visit site</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- ---------footer----------------->
 <footer>

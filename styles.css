@@ -104,12 +104,31 @@ body {
     font-size: 1rem;
     text-decoration: none;
     border: none;
-    color: rgb(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header-icon-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #292b31;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.header-icon-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .header-icon-link:hover {
     color: #717070;
-    border-bottom: 1px solid #292b31;
 }
 
 .btn-header-logo {
@@ -127,6 +146,7 @@ body {
 .btn-header-logo:hover {
     border: 1px solid #292b31;
     border-bottom: none;
+
 }
 
 .logo {
@@ -244,7 +264,6 @@ article {
     display: flex;
     align-items: center;
 }
-
 #contact-btn {
     position: relative;
     display: block;
@@ -257,16 +276,36 @@ article {
     font-size: 1rem;
     text-decoration: none;
     border: none;
-    color: rgb(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     cursor: pointer;
     left: 50%;
     transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+    transition: color 0.3s ease;
 }
 
-#contact-btn:hover, #contact-btn:focus {
+#contact-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #292b31;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+#contact-btn:hover::after,
+#contact-btn:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#contact-btn:hover,
+#contact-btn:focus {
     color: #717070;
-    border-bottom: 1px solid #292b31;
 }
 
 #contact-container {
@@ -437,6 +476,7 @@ article {
     font-weight: 300;
     display: inline-block;
     text-align: center;
+    cursor: pointer;
 }
 
 #scroll-down-button:hover {
