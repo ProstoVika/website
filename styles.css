@@ -597,6 +597,8 @@ article {
     justify-content: space-between;
     width: 100%;
     padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .project-link {
@@ -784,11 +786,18 @@ footer {
         width: 100%;
         height: auto;
     }
+    video{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
 
     .stars-container {
         width: 100%;
     }
-
+    .text-details{
+        margin: 0;
+    }
     .close-contact {
         left: 20px;
     }
@@ -934,12 +943,17 @@ footer {
     }
 
     .img-project {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
     .stars-container {
-        width: 90%;
+        width: 80%;
+    }
+    video{
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
