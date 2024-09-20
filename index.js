@@ -13,6 +13,9 @@ class MainController {
         this.setupScrollDownButtonListener();
     }
 
+
+
+
     initCursor() {
         this.cursor = document.createElement("div");
         this.cursor.id = "cursor";
